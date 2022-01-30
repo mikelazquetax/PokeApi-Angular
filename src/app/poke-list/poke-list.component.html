@@ -1,0 +1,15 @@
+
+
+<div class="buscador" >
+    <label class="buscador_label" for="busc">Buscar por Nombre</label>
+    <input type="text" name="buscador" id="buscador"  (keyup)="onKeyUp($event)"  placeholder="Enter name">
+</div>
+<div class="list" *ngFor="let pokemon of pokemonList">
+    <div class="list-item">
+        <p class="nombre"> {{pokemon.name}}</p>
+        <div class="tipos">Types:
+         <p *ngFor="let tipo of pokemon.type"> {{tipo}}  </p> 
+        </div>
+          <img class="image" src="{{pokemon.imagen}}" alt="{{pokemon.name}}">
+    </div>
+</div>

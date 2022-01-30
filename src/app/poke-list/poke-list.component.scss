@@ -1,0 +1,55 @@
+
+
+.buscador{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    input{
+        width: 10%;
+        margin-top: 2%;
+        padding: 1%;
+        border-color: gold ;
+    }
+}
+.list{
+    list-style: none;
+    margin-left: 5%;
+    display: inline-flex;
+    padding: 5%;
+    flex-direction: row;
+    
+}
+
+.list-item{
+    margin-bottom: 20px;
+    background-color: #242454;
+    border-style: double;
+    border-color: black;
+    width: 220px;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+
+    .nombre{
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    .tipos{
+    text-align: center;
+    background-color: white;
+    height: 100px;
+    }
+    .image{
+        
+        margin-left: 30%
+        
+     
+    }
+}
+
